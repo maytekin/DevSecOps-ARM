@@ -8,7 +8,7 @@
       "vNetSubnetName": "default",
       "vNetSubnetAddressPrefix": "10.0.0.0/24",
       "vmName": "DevSecOps-VM",
-      "adminUsername": "administrator1",
+      "adminUsername": "administrator15",
       "adminPublicKey": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCsPSNAapxY8FnEyjXWyhbsXTVh+q9+qdRSYFrpsR3yOOvbn0ZO+pRIjjk90EDIxvzBlBBJlB1FWOjZK7mwt2GT2DweZacKVrZjiT/N5NDIWx/CdExrQev2ElcGewMd4sYKCOHubNP/CLOurkji7mM2ERiKuygMYHCF/zxfKuxY0WR3C0hz4e3UmNvjGpZVtv3BwxjvrCevIhV2EjPBQp2yBvSH1oeEQ0arb50alWPiy54iDGQFodUlkAZuIl0bpb6CQ9LYnq3VzqEzpFQStT19XX1mP8zG5ga0eJI1+Z7Vi0VouONtxrQ+KHNF0xI1Up5+ZleLoU3Fsf2eUXcGHNff noname",
       "vmSize": "Standard_D2s_v3",
       "publicIPAddressName": "DevSecOps-IP",
