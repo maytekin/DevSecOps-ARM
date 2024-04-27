@@ -13,7 +13,7 @@ jobs:
         env:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
         with:
-          args: --report
+          args: --severity-threshold=low --report
   
   build-and-deploy:
       needs: snyk
