@@ -15,7 +15,7 @@ jobs:
         with:
           args: --severity-threshold=low --report
   
-  build-and-deploy:
+  Deploy_VM:
       needs: snyk
       runs-on: ubuntu-latest
       steps:
@@ -35,7 +35,21 @@ jobs:
           subscriptionId: ${{ secrets.AZURE_SUBSCRIPTION }}
           resourceGroupName: DevSecOpsAutomation
           template: ./VM.json
-       # Deploy Storage Account
+          
+  Deploy_Storage_Account:
+      needs: snyk
+      runs-on: ubuntu-latest
+      steps:
+
+        # Checkout code
+      - uses: actions/checkout@main
+
+        # Log into Azure
+      - uses: azure/login@v1
+        with:
+          creds: ${{ secrets.AZURE_CREDENTIALS }}
+
+        # Deploy Storage Account
       - name: Run ARM deploy
         uses: azure/arm-deploy@v1
         with:
