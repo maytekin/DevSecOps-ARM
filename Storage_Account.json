@@ -13,9 +13,14 @@
           "tier": "Standard"
         },
         "properties": {
-            "allowBlobPublicAccess": "true"
-        },
-        "requireInfrastructureEncryption": "false"
+            "allowBlobPublicAccess": "true",
+            "encryption": {
+              "requireInfrastructureEncryption": "false"
+            },
+            "minimumTlsVersion": "TLS1_0",
+            "publicNetworkAccess": "Enabled",
+            "supportsHttpsTrafficOnly": "false"
+          }
       }
     ],
     "outputs": {}
